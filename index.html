@@ -26,18 +26,18 @@
         </div>
         <div class= "inputform">
             <div>Let's do this!</div>
-            <form action="/action_page.php" method="post">
+            <form action="#" method="post">
                 <p>
                 <label for="fname">FIRST NAME:</label><br>
-                <input type="text" id="fname" name="fname" placeholder="Thor">
+                <input type="text" id="fname" name="fname" placeholder="Thor" required>
                 </p>
                 <p>
                 <label for="lname">LAST NAME:</label><br>
-                <input type="text" id="lname" name="lname" placeholder="Odinson">
+                <input type="text" id="lname" name="lname" placeholder="Odinson" required>
                 </p>
                 <p>
                 <label for="user_email">EMAIL:</label><br>
-                <input type="email" id="user_email" name="email" placeholder="ThorOdinson@gmail.com">
+                <input type="email" id="user_email" name="email" placeholder="ThorOdinson@gmail.com" required>
                 </p>
                 <p>
                 <label for="phone_number">PHONE NUMBER:</label><br>
@@ -45,16 +45,16 @@
                 </p>
                 <p>
                 <label for="user_password">PASSWORD:</label><br>
-                <input type="password" id="user_password" name="user_password" >
+                <input type="password" id="user_password" name="user_password" required >
                 </p>
                 <p>
                 <label for="confirm_password">CONFIRM PASSWORD:</label><br>
-                <input type="password" id="confirm_password" name="user_password_confirmation" >
+                <input type="password" id="confirm_password" name="user_password_confirmation" required>
                 </p>
               </form> 
         </div>
         <div class= "bottom">
-            <button>Create Account</button>
+            <button type ="submit">Create Account</button>
             <div>Already have an account? <a>Log In</a></div>
         </div>
     </div>

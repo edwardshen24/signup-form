@@ -149,6 +149,7 @@ a{
     font-weight:550;
     margin: 20px;
     bottom: 50px;
+    text-shadow: 1px 1px 2px #E5E7EB;
 }
 
 .inputform{
@@ -163,6 +164,7 @@ a{
     left: 20px;
     font-size: large;
     font-weight:550;
+    text-shadow: 1px 1px 2px #E5E7EB;
 }
 
 form{
@@ -181,9 +183,9 @@ label{
 
 input{
     font-size: medium;
-    width: 200px;
+    width: 250px;
     height: 25px;
-    text-shadow: 1px 1px 2px #E5E7EB
+    box-shadow: 1px 1px 2px #E5E7EB;
 }
 
 .bottom{
@@ -198,6 +200,7 @@ input{
     border:none;
     padding: 15px 50px; 
     margin-bottom: 15px;
+    box-shadow: 1px 1px 2px #8b8d91;
 }
 
 .bottom > button:hover{
