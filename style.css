@@ -136,34 +136,77 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 66%;
     font-family: Roboto, sans-serif;
     background-color: #F5F5F5;
-    border: 2px red solid;
+    box-shadow: 10px 10px;
+
 }
 
 .para{
     position:relative;
-    width: 60%;
+    width: 50%;
     font-size: large;
-    font-weight: bold;
-    left: 10px;
+    font-weight:550;
     margin: 20px;
+    bottom: 50px;
 }
 
 .inputform{
     background-color: white;
     position: relative;
     height: auto;
-    border: 2px red solid;
+    
+}
+
+.inputform > div{
+    margin: 20px;
+    left: 20px;
+    font-size: large;
+    font-weight:550;
 }
 
 form{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
+    margin: 20px;
+    column-gap: 15px;
+}
+
+label{
+    font-size:0.7em ;
+    font-weight:bold;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px #E5E7EB;
+}
+
+input{
+    font-size: medium;
+    width: 200px;
+    height: 25px;
+    text-shadow: 1px 1px 2px #E5E7EB
 }
 
 .bottom{
-    border: 2px red solid;
+    margin: 20px;
+}
+
+.bottom > button{
+    color: white;
+    font-size: medium;
+    background-color:#596D48 ;
+    border-radius: 8px;
+    border:none;
+    padding: 15px 50px; 
+    margin-bottom: 15px;
+}
+
+.bottom > button:hover{
+    background-color:#475837;
+    cursor:pointer;
+    
+}
+
+.bottom > div> a{
+    color: #596D48;
+    font-weight: bold;
 }
