@@ -3,6 +3,8 @@
     src: url("./stuff/Norse-Bold.otf");
   }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body{
     margin:0;
     height:100vh;
@@ -14,13 +16,79 @@ body{
     height: 100%;
     width: 33%;
     position:relative;
-    overflow: hidden;
+    overflow: hidden; /* makes the photo stretch to the bottom */
 }
 
-.lefthero > img{
+.leaves{
     height:100%;
     width: 100%;
     background-size: cover;
+}
+
+.halie{
+    position: absolute;
+    bottom:5px;
+    right:5px;
+    height: 40px;
+    width: 40px;
+    border: 6px;
+}
+
+.haliediv{
+    position: absolute;
+    bottom:0;
+    right:0;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.haliediv:before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    content: "";
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    background: conic-gradient(
+        #fd004c,
+        #fe9000,
+        #fff020,
+        #3edf4b,
+        #3363ff,
+        #b102b7,
+        #fd004c
+    );
+    left: -25%;
+    top: -25%;
+    animation: spin 1.5s infinite linear;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.haliediv:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #1c1b29;
+    height: 93%;
+    width: 93%;
+    top: 3.5%;
+    left: 3.5%;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 6px;
+    display: grid;
+    place-items: center;
+
 }
 
 .banner{
@@ -29,7 +97,7 @@ body{
     position:absolute;
     justify-content: center;
     align-items: center;
-    top: 200px;
+    top: 250px;
     width: 100%;
     background: rgba(22, 22, 22, 0.5);
     height:150px;
@@ -44,7 +112,7 @@ body{
 .odin{
     color:white;
     font-family: 'NorseFont';
-    font-weight: bold;
+    font-weight:700;
     font-size: 75px;
 }
 
@@ -65,7 +133,37 @@ a{
     display: inline-block;
 }
 .rightcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 66%;
-
+    font-family: Roboto, sans-serif;
+    background-color: #F5F5F5;
+    border: 2px red solid;
 }
 
+.para{
+    position:relative;
+    width: 60%;
+    font-size: large;
+    font-weight: bold;
+    left: 10px;
+    margin: 20px;
+}
+
+.inputform{
+    background-color: white;
+    position: relative;
+    height: auto;
+    border: 2px red solid;
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.bottom{
+    border: 2px red solid;
+}
